@@ -3,8 +3,10 @@ import { useState } from "react"
 function App(){
 
   const [nome, setNome] = useState('Ronaldo')
- 
-  return (
+  
+   const Formulario = () => {
+
+    return(
     <div>
       <h3>Pizzaria 2c</h3>
       <input
@@ -18,7 +20,17 @@ function App(){
         CLIQUE AQUI
       </button>
     </div>
-  )
+      
+    )
+    }
+  return (
+    <div>
+      <h3>Pizzaria 2c</h3>
+    <Formulario />
+    <Formulario />
+    <Formulario />
+    </div>
+  );
 }
 
 export default App
